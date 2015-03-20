@@ -1,0 +1,8 @@
+*.pro.user
+*pro.user.*
+Makefile
+Makefile.*
+source/library/.build/*
+source/library/libcardview.*
+source/example/.build/*
+source/example/cardview-example
