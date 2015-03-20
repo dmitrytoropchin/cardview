@@ -16,7 +16,8 @@ CARDVIEW_LIB_VERSION = $${CARDVIEW_LIB_VER_MAJ}.$${CARDVIEW_LIB_VER_MIN}.$${CARD
 CARDVIEW_LIB_DIR = $$PWD/source/library/
 
 # set additional configuration options like plugin or static here
-CARDVIEW_CONFIG =
+# or use qmake CARDVIEW_CONFIG=<your option here>
+isEmpty(CARDVIEW_CONFIG): CARDVIEW_CONFIG =
 
 # build included library usage example (YES or NO)
 BUILD_EXAMPLE = YES
