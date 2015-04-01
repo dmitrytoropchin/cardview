@@ -20,10 +20,9 @@ CARDVIEW_LIB_DIR = $$PWD/source/library/
 isEmpty(CARDVIEW_CONFIG): CARDVIEW_CONFIG =
 
 # build included library usage example (YES or NO)
-BUILD_EXAMPLE = YES
+isEmpty(BUILD_EXAMPLE): BUILD_EXAMPLE = YES
 
 # use qmake INSTALL_PREFIX=<custom path> for custom install prefix
-
 isEmpty(INSTALL_PREFIX): INSTALL_PREFIX = /opt/$$CARDVIEW_LIB_NAME-$$CARDVIEW_LIB_VERSION
 isEmpty(INSTALL_INCLUDES_DIR): INSTALL_INCLUDES_DIR = $$INSTALL_PREFIX/include
 isEmpty(INSTALL_LIBS_DIR): INSTALL_LIBS_DIR = $$INSTALL_PREFIX/lib
