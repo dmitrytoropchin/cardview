@@ -46,7 +46,7 @@ void CardViewWrapperModel::setDefaultRoleValue(int card_model_role, const QVaria
 QVariant CardViewWrapperModel::data(const QModelIndex &proxy_index, int role) const
 {
     Q_D(const CardViewWrapperModel);
-    if (!d->role_mapping.contains(role))
+    if (!d->role_mapping.contains(role) && d->default_role_value.contains(role))
         return d->default_role_value.value(role, QVariant());
     return QIdentityProxyModel::data(proxy_index, d->role_mapping.value(role, role));
 }
