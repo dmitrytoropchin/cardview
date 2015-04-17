@@ -11,7 +11,7 @@ class CARDVIEW_EXPORT CardViewWrapperModel : public QIdentityProxyModel {
     Q_DECLARE_PRIVATE(CardViewWrapperModel)
 public:
     enum Role {
-        TitleTextRole = Qt::UserRole,           // QString
+        TitleTextRole = 0x1000,                 // QString
         InformativeTextRole,                    // QString
         PictureRole,                            // QPixmap
         CardSizeRole                            // QSize
